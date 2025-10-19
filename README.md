@@ -14,5 +14,6 @@ and BoltDB, but implementations are on the roadmap.
 - [x] Badger
 - [x] MariaDB/MySQL
 - [x] PostgreSQL
+- [x] SQLite
 - [ ] Cassandra
 - [ ] ...

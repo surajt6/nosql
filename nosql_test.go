@@ -360,6 +360,20 @@ func TestBolt(t *testing.T) {
 	run(t, db)
 }
 
+func TestSQLite(t *testing.T) {
+	path := "./tmp/db.db"
+
+	if _, err := os.Stat(path); os.IsNotExist(err) {
+		fmt.Print("Using in memory SQLite DB")
+	}
+
+	db, err := New("sqlite", path)
+	assert.FatalError(t, err)
+	defer db.Close()
+
+	run(t, db)
+}
+
 func TestIsErrNotFound(t *testing.T) {
 	assert.True(t, IsErrNotFound(database.ErrNotFound))
 	assert.True(t, IsErrNotFound(sql.ErrNoRows))

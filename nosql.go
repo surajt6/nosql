@@ -10,6 +10,7 @@ import (
 	"github.com/smallstep/nosql/database"
 	"github.com/smallstep/nosql/mysql"
 	"github.com/smallstep/nosql/postgresql"
+	"github.com/smallstep/nosql/sqlite"
 )
 
 // Option is just a wrapper over database.Option.
@@ -50,6 +51,8 @@ var (
 	MySQLDriver = "mysql"
 	// PostgreSQLDriver indicates the default PostgreSQL database.
 	PostgreSQLDriver = "postgresql"
+	// SQLiteDriver indicates the default PostgreSQL database.
+	SQLiteDriver = "sqlite"
 
 	// Badger FileLoadingMode
 
@@ -72,6 +75,8 @@ func New(driver, dataSourceName string, opt ...Option) (db database.DB, err erro
 		db = &mysql.DB{}
 	case PostgreSQLDriver:
 		db = &postgresql.DB{}
+	case SQLiteDriver:
+		db = &sqlite.DB{}
 	default:
 		return nil, errors.Errorf("%s database not supported", driver)
 	}
