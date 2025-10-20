@@ -11,7 +11,7 @@ import (
 	"github.com/dgraph-io/badger/v2"
 	"github.com/dgraph-io/badger/v2/options"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
+	"github.com/surajt6/nosql/database"
 )
 
 // DB is a wrapper over *badger/v2.DB,

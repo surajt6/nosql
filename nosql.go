@@ -4,13 +4,13 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	badgerV1 "github.com/smallstep/nosql/badger/v1"
-	badgerV2 "github.com/smallstep/nosql/badger/v2"
-	"github.com/smallstep/nosql/bolt"
-	"github.com/smallstep/nosql/database"
-	"github.com/smallstep/nosql/mysql"
-	"github.com/smallstep/nosql/postgresql"
-	"github.com/smallstep/nosql/sqlite"
+	badgerV1 "github.com/surajt6/nosql/badger/v1"
+	badgerV2 "github.com/surajt6/nosql/badger/v2"
+	"github.com/surajt6/nosql/bolt"
+	"github.com/surajt6/nosql/database"
+	"github.com/surajt6/nosql/mysql"
+	"github.com/surajt6/nosql/postgresql"
+	"github.com/surajt6/nosql/sqlite"
 )
 
 // Option is just a wrapper over database.Option.
@@ -51,7 +51,7 @@ var (
 	MySQLDriver = "mysql"
 	// PostgreSQLDriver indicates the default PostgreSQL database.
 	PostgreSQLDriver = "postgresql"
-	// SQLiteDriver indicates the default PostgreSQL database.
+	// SQLiteDriver indicates the default SQLite database.
 	SQLiteDriver = "sqlite"
 
 	// Badger FileLoadingMode

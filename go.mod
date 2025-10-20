@@ -1,4 +1,4 @@
-module github.com/smallstep/nosql
+module github.com/surajt6/nosql
 
 go 1.23.0
 

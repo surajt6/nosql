@@ -3,6 +3,6 @@
 
 package sqlite
 
-import "github.com/smallstep/nosql/database"
+import "github.com/surajt6/nosql/database"
 
 type DB = database.NotSupportedDB

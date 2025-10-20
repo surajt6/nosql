@@ -3,6 +3,6 @@
 
 package postgresql
 
-import "github.com/smallstep/nosql/database"
+import "github.com/surajt6/nosqlatabase"
 
 type DB = database.NotSupportedDB

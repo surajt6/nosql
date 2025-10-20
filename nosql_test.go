@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/smallstep/assert"
-	"github.com/smallstep/nosql/database"
+	"github.com/surajt6/nosql/database"
 )
 
 type testUser struct {

@@ -11,7 +11,7 @@ import (
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
+	"github.com/surajt6/nosql/database"
 )
 
 // DB is a wrapper over *sql.DB,

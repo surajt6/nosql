@@ -13,7 +13,7 @@ import (
 	"github.com/jackc/pgx/v5"
 	pgxstdlib "github.com/jackc/pgx/v5/stdlib"
 	"github.com/pkg/errors"
-	"github.com/smallstep/nosql/database"
+	"github.com/surajt6/nosql/database"
 )
 
 // DB is a wrapper over *sql.DB,
